@@ -1,6 +1,6 @@
 <h1>Item Data</h1>
 
 {% for item in li %}
-<h3>{{item.item_name}}, {{item.price}}</h3>
-
+<a href="{% url 'Foodapp:details' item.id %}">{{item.id}}. {{item.item_name}}</a>
+<br/><br/>
 {% endfor %}
